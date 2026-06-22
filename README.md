@@ -6,6 +6,7 @@ The dashboard displays Flight number, route, crew status, and boarding status.
 * React
 * Javascript
 * CSS
+* Tailwind
 
 ## Future Enhancements
 * User Profile

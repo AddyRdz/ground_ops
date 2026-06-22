@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="bg-[#F9B612] min-h-screen pt-10">
-      <h1 className="text-6xl text-center">GROUND CONTROL</h1>
+      <h1 className="text-6xl text-[#304CB2] font-bold text-center">GROUND CONTROL</h1>
       <div className="flex gap-6 justify-center">
       {flights.map((flight) => (
         <div
