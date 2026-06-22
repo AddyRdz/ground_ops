@@ -1,22 +1,22 @@
-import { useState } from 'react'
+import flights from "./data/flights";
 
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
-  <h1>Ground Control App</h1>
-  <p>Flight Number:</p>
-  <p>Route:</p>
-  <p>Flight Status:</p>
-  <p>Crew Status:</p>
-  <p>Ready:</p>
+      <h1>GROUND CONTROL</h1>
+      {flights.map((flight) => (
+        <p key={flight.id}>
+          <p>Flight Number: {flight.flightNumber}</p>
+          <p>Route: {flight.route}</p>
+          <p>Status: {flight.boardingStatus}</p>
+          <p>Crew Status: {flight.crewStatus}</p>
+          <p>Flight Ready: {flight.ready ? "Yes" : "No"}</p>
+          </p>
+      ))}
     </div>
-  
-
-  )
+  );
 }
 
-export default App
+export default App;
