@@ -17,7 +17,7 @@ const flights = [
     flightNumber: "SWA105",
     route: "HOU -> LGA",
     boardingStatus: "Not Started", 
-    ready: true,
+    ready: false,
 
     crew: {
         assigned: 2,
