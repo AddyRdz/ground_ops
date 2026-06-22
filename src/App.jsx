@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>GROUND CONTROL</h1>
+      <h1 className="text-2xl">GROUND CONTROL</h1>
       {flights.map((flight) => (
         <p key={flight.id}>
           <p>Flight Number: {flight.flightNumber}</p>
